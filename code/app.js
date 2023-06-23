@@ -27,7 +27,7 @@ const cardArray = [
     {
         name: 'milkshake',
         img: 'images/milkshake.png'
-    }
+    },
 
     {
         name: 'fries',
@@ -53,7 +53,7 @@ const cardArray = [
         name: 'ice-cream',
         img: 'images/ice-cream.png'
     },
-    
+
     {
         name: 'milkshake',
         img: 'images/milkshake.png'
@@ -61,4 +61,7 @@ const cardArray = [
     
 ]
 
-console.log(cardArray);
+cardArray.sort(() => 0.5 - Math.random());
+
+const gridDisplay = document.querySelector('#grid');
+
