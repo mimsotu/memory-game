@@ -65,3 +65,15 @@ cardArray.sort(() => 0.5 - Math.random());
 
 const gridDisplay = document.querySelector('#grid');
 
+function createBoard() {
+    for (let i = 0; i < 10; i++) {
+        const card = document.createElement('img');
+        card.setAttribute('src', 'images/blank.png');
+        card.setAttribute('data-id', i);
+        console.log(card, i);
+        gridDisplay.append(card);
+    }
+
+}
+
+createBoard();
